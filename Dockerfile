@@ -1,4 +1,4 @@
-FROM asrob/ubuntu-nginx:18.04
+FROM asrob/ubuntu-base:18.04
 
 RUN add-apt-repository ppa:ondrej/nginx \
  && apt-get update \
