@@ -5,7 +5,7 @@ RUN add-apt-repository ppa:ondrej/nginx \
  && apt-get install -y --no-install-recommends nginx-extras \
  && apt-get clean all \
  && rm -rf /var/lib/apt/lists/* \
- && rm /etc/nginx/sites-enabled/default
+ && rm /etc/nginx/sites-enabled/default \
  && mkdir -p /etc/nginx/ssl
 COPY etc /etc
 COPY init.sh /init.sh
