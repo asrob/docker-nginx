@@ -1,6 +1,6 @@
 FROM asrob/ubuntu-base:18.04
 
-RUN add-apt-repository ppa:ondrej/nginx \
+RUN add-apt-repository ppa:ondrej/nginx-mainline \
  && apt-get update \
  && apt-get install -y --no-install-recommends geoip-database nginx-extras libgeoip1 logrotate \
  && apt-get clean all \
